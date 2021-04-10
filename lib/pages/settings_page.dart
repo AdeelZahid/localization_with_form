@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:localization_flutter/localization/localization_const.dart';
 
 class SettingPage extends StatefulWidget {
   SettingPage({Key key}) : super(key: key);
@@ -12,7 +13,7 @@ class _SettingPageState extends State<SettingPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Settings Page'),
+        title: Text(getTranslated(context, 'settings')),
       ),
     );
   }

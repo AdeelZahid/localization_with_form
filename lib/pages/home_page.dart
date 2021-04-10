@@ -90,7 +90,7 @@ class _HomePageState extends State<HomePage> {
               size: 30.0,
             ),
             title: Text(
-              'About us',
+              getTranslated(context, 'about_us'),
               style: _textStyle,
             ),
             onTap: () {
@@ -105,7 +105,7 @@ class _HomePageState extends State<HomePage> {
               size: 30.0,
             ),
             title: Text(
-              'Settings',
+              getTranslated(context, 'settings'),
               style: _textStyle,
             ),
             onTap: () {

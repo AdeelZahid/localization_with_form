@@ -59,13 +59,16 @@ class _MainFormState extends State<MainForm> {
                                 TextFormField(
                                   validator: (val) {
                                     if (val.isEmpty) {
-                                      return 'Name is Required';
+                                      return getTranslated(
+                                          context, 'required_field');
                                     }
                                     return null;
                                   },
                                   decoration: InputDecoration(
                                     prefixIcon: Icon(Icons.person),
-                                    labelText: "Name ",
+                                    labelText: getTranslated(context, 'name'),
+                                    hintText:
+                                        getTranslated(context, 'name_hint'),
                                   ),
                                 ),
                                 SizedBox(
@@ -74,13 +77,16 @@ class _MainFormState extends State<MainForm> {
                                 TextFormField(
                                   validator: (val) {
                                     if (val.isEmpty) {
-                                      return 'Email is Required';
+                                      return getTranslated(
+                                          context, 'required_field');
                                     }
                                     return null;
                                   },
                                   decoration: InputDecoration(
                                     prefixIcon: Icon(Icons.email),
-                                    labelText: "Email",
+                                    labelText: getTranslated(context, 'email'),
+                                    hintText:
+                                        getTranslated(context, 'email_hint'),
                                   ),
                                 ),
                                 SizedBox(
@@ -89,13 +95,15 @@ class _MainFormState extends State<MainForm> {
                                 DateTimeField(
                                   validator: (val) {
                                     if (val == null) {
-                                      return 'Date of Birth is Required';
+                                      return getTranslated(
+                                          context, 'required_field');
                                     }
                                     return null;
                                   },
                                   decoration: InputDecoration(
                                     prefixIcon: Icon(Icons.calendar_today),
-                                    labelText: 'Select Date of Birth',
+                                    labelText:
+                                        getTranslated(context, 'date_of_birth'),
                                   ),
                                   format: format,
                                   onShowPicker: (context, currentValue) {
@@ -122,7 +130,7 @@ class _MainFormState extends State<MainForm> {
                                   shape: StadiumBorder(),
                                   color: Theme.of(context).primaryColor,
                                   child: Text(
-                                    'Submit Information',
+                                    getTranslated(context, 'submit_info'),
                                     style: TextStyle(
                                         color: Colors.white, fontSize: 20.0),
                                   ),
