@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:localization_flutter/language/language.dart';
+import 'package:localization_flutter/localization/localization_const.dart';
+import 'package:localization_flutter/main.dart';
 import 'package:localization_flutter/routes/route_name.dart';
 import 'package:localization_flutter/widget/main_form.dart';
 
@@ -11,8 +13,10 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  void _changeLanguage(language) {
+  void _changeLanguage(Language language) async {
     print(language.languageCode);
+    Locale _temp = await setLocale(language.languageCode);
+    MyApp.setLocale(context, _temp);
   }
 
   @override
@@ -20,7 +24,9 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       drawer: _drawerList(),
       appBar: AppBar(
-        title: Text('Home Page'),
+        title: Text(
+          getTranslated(context, 'home_page'),
+        ),
         actions: [
           Padding(
             padding: EdgeInsets.all(8.0),

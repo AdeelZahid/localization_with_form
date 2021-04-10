@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:localization_flutter/routes/route_name.dart';
 
 class AboutPage extends StatefulWidget {
   AboutPage({Key key}) : super(key: key);

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:datetime_picker_formfield/datetime_picker_formfield.dart';
+import 'package:localization_flutter/localization/localization_const.dart';
 
 class MainForm extends StatefulWidget {
   const MainForm({Key key}) : super(key: key);
@@ -38,7 +39,7 @@ class _MainFormState extends State<MainForm> {
                     height: MediaQuery.of(context).size.height / 6,
                     child: Center(
                       child: Text(
-                        'Personal Information',
+                        getTranslated(context, 'personal_information'),
                         textAlign: TextAlign.center,
                         style: TextStyle(
                             fontSize: 30.0, fontWeight: FontWeight.bold),
