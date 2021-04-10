@@ -21,3 +21,12 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+## Snapshoots
+![Snap1](https://github.com/AdeelZahid/localization_with_form/blob/main/snapshoot/snap1.PNG)
+![Snap2](https://github.com/AdeelZahid/localization_with_form/blob/main/snapshoot/snap2.PNG)
+![Snap3](https://github.com/AdeelZahid/localization_with_form/blob/main/snapshoot/snap3.PNG)
+![Snap4](https://github.com/AdeelZahid/localization_with_form/blob/main/snapshoot/snap4.PNG)
+![Snap5](https://github.com/AdeelZahid/localization_with_form/blob/main/snapshoot/snap5.PNG)
+![Snap6](https://github.com/AdeelZahid/localization_with_form/blob/main/snapshoot/snap6.PNG)
+![Snap7](https://github.com/AdeelZahid/localization_with_form/blob/main/snapshoot/snap7.PNG)
